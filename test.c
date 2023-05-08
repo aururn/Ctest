@@ -10,7 +10,7 @@ int main()
         printf("%2d  ",i);
     
     putchar('\n');
-    for (i=1; i<=42; i++)
+    for (i=1; i<=43; i++)
     {
         if(i==5)
         {
