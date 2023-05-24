@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "IntStack.h"
 
-int Initialize(Intstack *s, int max)
+int Initialize(IntStack *s, int max)
 {
     s->ptr = 0;
     if((s->stk = calloc(max,sizeof(int))) == NULL){
@@ -13,14 +13,14 @@ int Initialize(Intstack *s, int max)
     return 0;
 }
 
-int Push(Intstack *s, int *x){
+int Push(IntStack *s, int *x){
     if(s->ptr >= s->max)
         return -1;
     s->stk[s->ptr++] = x;
     return 0;
 }
 
-int Pop(Intstack *s, int *x)
+int Pop(IntStack *s, int *x)
 {
     if(s->ptr <= 0)
         return -1;
@@ -28,7 +28,7 @@ int Pop(Intstack *s, int *x)
     return 0;
 }
 
-void Clear(Intstack *s)
+void Clear(IntStack *s)
 {
     s->ptr = 0;
 }

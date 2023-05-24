@@ -3,7 +3,7 @@
 
 int main(){
 
-    Intstack s;
+    IntStack s;
 
     if(Initialize(&s,64) == -1){
         puts("失敗");
