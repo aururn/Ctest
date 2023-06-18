@@ -8,6 +8,7 @@
 void bubble(int a[], int n)
 {
     int k = 0;
+    int count = 0;
 
     while(k<n-1){
         int j;
@@ -16,10 +17,12 @@ void bubble(int a[], int n)
             if(a[j-1] > a[j]){
                 swap(int, a[j-1], a[j]);
                 last = j;
+                count++;
             }
-        k = last;
     }
+    k = last;
     }
+    printf("%d",count);
 }
 
 int main()

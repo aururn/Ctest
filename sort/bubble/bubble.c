@@ -8,15 +8,12 @@ void bubble(int a[], int n)
     for(i=0;i<n-1;i++)
     {
         for(j=n-1;j>i;j--){
-            int exchang = 0;
             if(a[j-1] > a[j]){
                 int temp = a[j];
                 a[j] = a[j-1];
                 a[j-1] = temp;
                 cnt++;
             }
-            if(exchang == 0)
-                break;
         }
     }
 

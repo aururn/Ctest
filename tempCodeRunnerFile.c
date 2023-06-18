@@ -1,2 +1,2 @@
 
-    int i,j;
+        else printf("%d ",a[i]);

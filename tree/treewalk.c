@@ -51,6 +51,7 @@ int main(){
     printf("\n");
     printf("Inorder\n");
     inParse(root);
+    printf("\n");
     printf("Postorder\n");
     postParse(root);
     printf("\n");
