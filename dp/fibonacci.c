@@ -7,7 +7,6 @@ int fibonacci(int n){
         return dp[n] = 1;
     
     if(dp[n] != -1) return dp[n];
-    
     return dp[n] = fibonacci(n-2) + fibonacci(n-1);
     
     
@@ -21,6 +20,6 @@ int main(){
     scanf("%d",&n);
     
     printf("%d\n",fibonacci(n));
-    
+
     return 0;
 }
